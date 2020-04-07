@@ -63,7 +63,7 @@ class HomeAdapter extends DefAdapter {
               }
             } catch (e) {
               print("路由错误：$e");
-              showToast("路由错误");
+              //showToast("路由错误");
             }
           },
         ),
