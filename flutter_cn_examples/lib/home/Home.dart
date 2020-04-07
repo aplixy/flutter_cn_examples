@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
-import 'package:fluttercnexamples/common/ToastTools.dart';
 
 List<ItemData> _dataList = [
-  ItemData("aaa", "/aaa"), 
+  ItemData("MyFadeTest", "/MyFadeTest"), 
 ];
 
 class Home extends StatefulWidget {

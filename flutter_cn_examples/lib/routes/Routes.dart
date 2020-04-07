@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
+import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import '../common/ToastTools.dart';
 
 final routes = {
   "/": (context) => Home(),
-  //"/search": (context, {arguments}) => SearchPage(arguments: arguments,),
+  "/MyFadeTest": (context) => MyFadeTest(),
 
 };
 
