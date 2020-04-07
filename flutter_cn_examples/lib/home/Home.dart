@@ -1,23 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
+import 'package:fluttercnexamples/common/ToastTools.dart';
 
 List<ItemData> _dataList = [
-  ItemData("跳转到搜索页面", "/search", arguments: {"id" : 123}), 
-  ItemData("跳转到商品页面", "/product"), 
-  ItemData("跳转到StackDemoPage", "/stack_demo"), 
-  ItemData("跳转到AppBarDemo", "/app_bar_demo"), 
-  ItemData("跳转到TabBarController", "/tabbar_controller"), 
-  ItemData("跳转到ButtonDemoPage", "/button_demo"), 
-  ItemData("跳转到TextFieldDemoPage", "/text_field_demo"), 
-  ItemData("跳转到CheckboxDemoPage", "/checkbox_demo"), 
-  ItemData("跳转到radio_demo", "/radio_demo"), 
-  ItemData("跳转到form_demo", "/form"), 
-  ItemData("跳转到DatePickerDemo", "/date_picker_demo"), 
-  ItemData("跳转到CupertinoDatePickerDemo", "/cupertino_date_picker_demo"), 
-  ItemData("跳转到SwiperDemo", "/swiper_demo"), 
-  ItemData("跳转到DialogPage", "/dialog_page"), 
-  ItemData("跳转到HttpDemo", "/http_demo"), 
+  ItemData("aaa", "/aaa"), 
 ];
 
 class Home extends StatefulWidget {
@@ -68,10 +55,15 @@ class HomeAdapter extends DefAdapter {
         ListTile(
           title: Text(data.title),
           onTap: () {
-            if (data.arguments == null) {
-              Navigator.pushNamed(_context, data.naviName);
-            } else {
-              Navigator.pushNamed(_context, data.naviName, arguments: data.arguments);
+            try {
+              if (data.arguments == null) {
+                Navigator.pushNamed(_context, data.naviName);
+              } else {
+                Navigator.pushNamed(_context, data.naviName, arguments: data.arguments);
+              }
+            } catch (e) {
+              print("路由错误：$e");
+              showToast("路由错误");
             }
           },
         ),
