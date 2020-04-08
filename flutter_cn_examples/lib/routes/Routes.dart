@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
+import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
+import 'package:fluttercnexamples/pages/TextDemo.dart';
 import '../common/ToastTools.dart';
 
 final routes = {
   "/": (context) => Home(),
   "/MyFadeTest": (context) => MyFadeTest(),
   "/Signature": (context) => Signature(),
+  "/TextDemo": (context) => TextDemo(),
+  "/FormTestRoute": (context) => FormTestRoute(),
 
 };
 

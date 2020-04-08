@@ -5,6 +5,8 @@ import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 List<ItemData> _dataList = [
   ItemData("MyFadeTest", "/MyFadeTest"), 
   ItemData("Signature", "/Signature"), 
+  ItemData("TextDemo", "/TextDemo"), 
+  ItemData("FormTestRoute", "/FormTestRoute"), 
 ];
 
 class Home extends StatefulWidget {
