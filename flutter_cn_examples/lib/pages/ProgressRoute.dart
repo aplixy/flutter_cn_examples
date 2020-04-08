@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercnexamples/common/LoadingDialog.dart';
 
 class ProgressRoute extends StatefulWidget {
   ProgressRoute({Key key}) : super(key: key);
@@ -11,6 +12,8 @@ class _ProgressRouteState extends State<ProgressRoute> with SingleTickerProvider
 
   AnimationController _animationController;
 
+  LoadingDialog _loadingDialog;
+
   @override
   void initState() {
     super.initState();
@@ -21,6 +24,7 @@ class _ProgressRouteState extends State<ProgressRoute> with SingleTickerProvider
         () => {}
       )
     );
+
   }
 
   @override
@@ -29,8 +33,18 @@ class _ProgressRouteState extends State<ProgressRoute> with SingleTickerProvider
     _animationController.dispose();
   }
 
+  void showTest() {
+    if (_loadingDialog == null) {
+      _loadingDialog = new LoadingDialog(context);
+    }
+
+    _loadingDialog.show();
+  }
+
   @override
   Widget build(BuildContext context) {
+    //showTest();
+    
     return Scaffold(
       appBar: AppBar(
         title: Text("ProgressRoute")
@@ -86,10 +100,18 @@ class _ProgressRouteState extends State<ProgressRoute> with SingleTickerProvider
                   value: .7,
                 ),
               ),
+
+              SizedBox(height:50),
+
+              RaisedButton(
+                onPressed: () {
+                  showTest();
+                }, 
+                child: Text("test"),
+              )
             ],
           ),  
         ),
-        
       ),
     );
     
