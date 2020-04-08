@@ -7,6 +7,7 @@ List<ItemData> _dataList = [
   ItemData("Signature", "/Signature"), 
   ItemData("TextDemo", "/TextDemo"), 
   ItemData("FormTestRoute", "/FormTestRoute"), 
+  ItemData("ProgressRoute", "/ProgressRoute"), 
 ];
 
 class Home extends StatefulWidget {
