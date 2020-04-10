@@ -8,6 +8,8 @@ List<ItemData> _dataList = [
   ItemData("TextDemo", "/TextDemo"), 
   ItemData("FormTestRoute", "/FormTestRoute"), 
   ItemData("ProgressRoute", "/ProgressRoute"), 
+  ItemData("BottomNaviDemo", "/BottomNaviDemo"), 
+  ItemData("SingleChildScrollViewTestRoute", "/SingleChildScrollViewTestRoute"), 
 ];
 
 class Home extends StatefulWidget {

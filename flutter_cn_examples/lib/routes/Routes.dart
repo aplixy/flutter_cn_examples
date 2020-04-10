@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
+import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
+import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
 import '../common/ToastTools.dart';
 
@@ -14,6 +16,8 @@ final routes = {
   "/TextDemo": (context) => TextDemo(),
   "/FormTestRoute": (context) => FormTestRoute(),
   "/ProgressRoute": (context) => ProgressRoute(),
+  "/BottomNaviDemo": (context) => BottomNaviDemo(),
+  "/SingleChildScrollViewTestRoute": (context) => SingleChildScrollViewTestRoute(),
 
 };
 

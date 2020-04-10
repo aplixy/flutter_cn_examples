@@ -20,6 +20,7 @@ class MyListViewBuilder {
     }
 
     return ListView.builder(
+      physics: BouncingScrollPhysics(),
       itemCount: _adapter.getCount(),
       itemBuilder: (context, index) {
         return _adapter.convertView(index);
