@@ -30,6 +30,7 @@ dependencies:
   flutter_swiper: ^1.1.6
   fluttertoast: ^4.0.0
   http: ^0.12.0+4
+  english_words: ^3.1.5
 
 dev_dependencies:
   flutter_test:

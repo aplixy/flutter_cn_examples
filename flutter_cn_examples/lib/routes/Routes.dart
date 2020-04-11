@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
+import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
+import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
@@ -18,6 +20,8 @@ final routes = {
   "/ProgressRoute": (context) => ProgressRoute(),
   "/BottomNaviDemo": (context) => BottomNaviDemo(),
   "/SingleChildScrollViewTestRoute": (context) => SingleChildScrollViewTestRoute(),
+  "/InfiniteListView": (context) => InfiniteListView(),
+  "/InfiniteGridView": (context) => InfiniteGridView(),
 
 };
 
