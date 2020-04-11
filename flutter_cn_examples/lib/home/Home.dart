@@ -13,6 +13,7 @@ List<ItemData> _dataList = [
   ItemData("InfiniteListView", "/InfiniteListView"), 
   ItemData("InfiniteGridView", "/InfiniteGridView"), 
   ItemData("CustomScrollViewTestRoute", "/CustomScrollViewTestRoute"), 
+  ItemData("ScrollControllerTestRoute", "/ScrollControllerTestRoute"), 
 ];
 
 class Home extends StatefulWidget {

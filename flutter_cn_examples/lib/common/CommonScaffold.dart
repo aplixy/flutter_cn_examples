@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class CommonScaffold extends StatelessWidget {
   final String titleStr;
   final Widget bodyWidget;
-  const CommonScaffold({Key key, this.titleStr = "Default Route", this.bodyWidget}) : super(key: key);
+  final FloatingActionButton floatingActionButton;
+  const CommonScaffold({Key key, this.titleStr = "Default Route", this.bodyWidget, this.floatingActionButton}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +14,8 @@ class CommonScaffold extends StatelessWidget {
       ),
 
       body: bodyWidget,
+
+      floatingActionButton: floatingActionButton,
 
     );
   }
