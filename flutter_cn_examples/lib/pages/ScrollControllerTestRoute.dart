@@ -17,7 +17,9 @@ class _ScrollControllerTestRouteState extends State<ScrollControllerTestRoute> {
   void initState() {
     super.initState();
     _controller.addListener(() {
-      print(_controller.offset);
+      //print(_controller.offset);
+
+      //print(_controller.position.pixels);
 
       if (_controller.offset < 1000 && showToTopBtn) {
         setState(() {

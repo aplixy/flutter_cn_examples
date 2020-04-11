@@ -5,9 +5,11 @@ import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
+import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollControllerTestRoute.dart';
+import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
 import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
@@ -26,6 +28,8 @@ final routes = {
   "/InfiniteGridView": (context) => InfiniteGridView(),
   "/CustomScrollViewTestRoute": (context) => CustomScrollViewTestRoute(),
   "/ScrollControllerTestRoute": (context) => ScrollControllerTestRoute(),
+  "/ScrollNotificationTestRoute": (context) => ScrollNotificationTestRoute(),
+  "/InfiniteListView2": (context) => InfiniteListView2(),
 
 };
 
