@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
+import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
@@ -22,6 +23,7 @@ final routes = {
   "/SingleChildScrollViewTestRoute": (context) => SingleChildScrollViewTestRoute(),
   "/InfiniteListView": (context) => InfiniteListView(),
   "/InfiniteGridView": (context) => InfiniteGridView(),
+  "/CustomScrollViewTestRoute": (context) => CustomScrollViewTestRoute(),
 
 };
 
