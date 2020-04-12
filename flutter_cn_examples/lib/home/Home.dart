@@ -17,6 +17,7 @@ List<ItemData> _dataList = [
   ItemData("ScrollNotificationTestRoute", "/ScrollNotificationTestRoute"), 
   ItemData("InfiniteListView2", "/InfiniteListView2"), 
   ItemData("WillPopScopeTestRoute", "/WillPopScopeTestRoute"), 
+  ItemData("InheritedWidgetTestRoute", "/InheritedWidgetTestRoute"), 
 ];
 
 class Home extends StatefulWidget {

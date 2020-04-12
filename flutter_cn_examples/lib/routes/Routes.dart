@@ -6,6 +6,7 @@ import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
+import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollControllerTestRoute.dart';
@@ -32,6 +33,7 @@ final routes = {
   "/ScrollNotificationTestRoute": (context) => ScrollNotificationTestRoute(),
   "/InfiniteListView2": (context) => InfiniteListView2(),
   "/WillPopScopeTestRoute": (context) => WillPopScopeTestRoute(),
+  "/InheritedWidgetTestRoute": (context) => InheritedWidgetTestRoute(),
 
 };
 
