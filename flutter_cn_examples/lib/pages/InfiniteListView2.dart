@@ -95,12 +95,12 @@ class _InfiniteListView2State extends State<InfiniteListView2> {
                   ),
                 );
               } else if (_words.length >= N) {
-                  return Container(
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(16.0),
-                    child: Text("没有更多了", style: TextStyle(color: Colors.grey)),
-                  );
-                }
+                return Container(
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.all(16.0),
+                  child: Text("没有更多了", style: TextStyle(color: Colors.grey)),
+                );
+              }
             } 
 
 

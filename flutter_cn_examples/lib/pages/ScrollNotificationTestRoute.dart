@@ -11,11 +11,9 @@ class ScrollNotificationTestRoute extends StatefulWidget {
 class _ScrollNotificationTestRouteState extends State<ScrollNotificationTestRoute> {
 
   String _progress = "0%";
+  
   @override
   Widget build(BuildContext context) {
-
-    
-
     
     return CommonScaffold(
       titleStr: "ScrollNotificationTestRoute",

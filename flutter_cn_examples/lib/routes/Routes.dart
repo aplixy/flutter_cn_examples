@@ -13,6 +13,7 @@ import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
 import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
+import 'package:fluttercnexamples/pages/WillPopScopeTestRoute.dart';
 import '../common/ToastTools.dart';
 
 final routes = {
@@ -30,6 +31,7 @@ final routes = {
   "/ScrollControllerTestRoute": (context) => ScrollControllerTestRoute(),
   "/ScrollNotificationTestRoute": (context) => ScrollNotificationTestRoute(),
   "/InfiniteListView2": (context) => InfiniteListView2(),
+  "/WillPopScopeTestRoute": (context) => WillPopScopeTestRoute(),
 
 };
 
