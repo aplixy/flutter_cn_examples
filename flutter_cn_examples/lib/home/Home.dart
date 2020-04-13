@@ -18,6 +18,7 @@ List<ItemData> _dataList = [
   ItemData("InfiniteListView2", "/InfiniteListView2"), 
   ItemData("WillPopScopeTestRoute", "/WillPopScopeTestRoute"), 
   ItemData("InheritedWidgetTestRoute", "/InheritedWidgetTestRoute"), 
+  ItemData("CounterLabel", "/CounterLabel"), 
 ];
 
 class Home extends StatefulWidget {

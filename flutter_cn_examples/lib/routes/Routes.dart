@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
+import 'package:fluttercnexamples/pages/CounterLabel.dart';
 import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
@@ -34,6 +35,7 @@ final routes = {
   "/InfiniteListView2": (context) => InfiniteListView2(),
   "/WillPopScopeTestRoute": (context) => WillPopScopeTestRoute(),
   "/InheritedWidgetTestRoute": (context) => InheritedWidgetTestRoute(),
+  "/CounterLabel": (context) => CounterLabel(),
 
 };
 
