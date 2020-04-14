@@ -3,6 +3,7 @@ import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 
 List<ItemData> _dataList = [
+  ItemData("ThemeTestRoute", "/ThemeTestRoute"), 
   ItemData("ProviderRoute", "/ProviderRoute"), 
   ItemData("UserModelProviderDemo", "/UserModelProviderDemo"), 
   ItemData("CounterLabel", "/CounterLabel"), 

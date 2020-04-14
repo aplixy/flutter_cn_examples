@@ -16,6 +16,7 @@ import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
 import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
+import 'package:fluttercnexamples/pages/ThemeTestRoute.dart';
 import 'package:fluttercnexamples/pages/UserModelProviderDemo.dart';
 import 'package:fluttercnexamples/pages/WillPopScopeTestRoute.dart';
 import '../common/ToastTools.dart';
@@ -40,6 +41,7 @@ final routes = {
   "/CounterLabel": (context) => CounterLabel(),
   "/UserModelProviderDemo": (context) => UserModelProviderDemo(),
   "/ProviderRoute": (context) => ProviderRoute(),
+  "/ThemeTestRoute": (context) => ThemeTestRoute(),
 
 };
 
