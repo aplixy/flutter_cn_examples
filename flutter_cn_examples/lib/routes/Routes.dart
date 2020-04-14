@@ -10,11 +10,13 @@ import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
 import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
+import 'package:fluttercnexamples/pages/ProviderRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollControllerTestRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
 import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
+import 'package:fluttercnexamples/pages/UserModelProviderDemo.dart';
 import 'package:fluttercnexamples/pages/WillPopScopeTestRoute.dart';
 import '../common/ToastTools.dart';
 
@@ -36,6 +38,8 @@ final routes = {
   "/WillPopScopeTestRoute": (context) => WillPopScopeTestRoute(),
   "/InheritedWidgetTestRoute": (context) => InheritedWidgetTestRoute(),
   "/CounterLabel": (context) => CounterLabel(),
+  "/UserModelProviderDemo": (context) => UserModelProviderDemo(),
+  "/ProviderRoute": (context) => ProviderRoute(),
 
 };
 
