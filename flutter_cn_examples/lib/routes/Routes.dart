@@ -4,6 +4,7 @@ import 'package:fluttercnexamples/pages/AsyncUiDemo.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/CounterLabel.dart';
 import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
+import 'package:fluttercnexamples/pages/DialogDemo.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
@@ -44,6 +45,7 @@ final routes = {
   "/ProviderRoute": (context) => ProviderRoute(),
   "/ThemeTestRoute": (context) => ThemeTestRoute(),
   "/AsyncUiDemo": (context) => AsyncUiDemo(),
+  "/DialogDemo": (context) => DialogDemo(),
 
 };
 
