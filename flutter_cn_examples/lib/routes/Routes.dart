@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
+import 'package:fluttercnexamples/pages/AsyncUiDemo.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/CounterLabel.dart';
 import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
@@ -42,6 +43,7 @@ final routes = {
   "/UserModelProviderDemo": (context) => UserModelProviderDemo(),
   "/ProviderRoute": (context) => ProviderRoute(),
   "/ThemeTestRoute": (context) => ThemeTestRoute(),
+  "/AsyncUiDemo": (context) => AsyncUiDemo(),
 
 };
 
