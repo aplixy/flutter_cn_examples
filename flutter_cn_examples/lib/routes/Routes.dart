@@ -5,7 +5,12 @@ import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/CounterLabel.dart';
 import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/DialogDemo.dart';
+import 'package:fluttercnexamples/pages/DragDemo.dart';
+import 'package:fluttercnexamples/pages/DragVertical.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
+import 'package:fluttercnexamples/pages/GestureConflictTestRoute.dart';
+import 'package:fluttercnexamples/pages/GestureDetectorTestRoute.dart';
+import 'package:fluttercnexamples/pages/GestureRecognizerTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
@@ -13,6 +18,7 @@ import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ProviderRoute.dart';
+import 'package:fluttercnexamples/pages/ScaleTestRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollControllerTestRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
@@ -46,6 +52,12 @@ final routes = {
   "/ThemeTestRoute": (context) => ThemeTestRoute(),
   "/AsyncUiDemo": (context) => AsyncUiDemo(),
   "/DialogDemo": (context) => DialogDemo(),
+  "/GestureDetectorTestRoute": (context) => GestureDetectorTestRoute(),
+  "/DragDemo": (context) => DragDemo(),
+  "/DragVertical": (context) => DragVertical(),
+  "/ScaleTestRoute": (context) => ScaleTestRoute(),
+  "/GestureRecognizerTestRoute": (context) => GestureRecognizerTestRoute(),
+  "/GestureConflictTestRoute": (context) => GestureConflictTestRoute(),
 
 };
 

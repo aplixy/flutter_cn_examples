@@ -3,6 +3,12 @@ import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 
 List<ItemData> _dataList = [
+  ItemData("GestureConflictTestRoute", "/GestureConflictTestRoute"), 
+  ItemData("GestureRecognizerTestRoute", "/GestureRecognizerTestRoute"), 
+  ItemData("ScaleTestRoute", "/ScaleTestRoute"), 
+  ItemData("DragVertical", "/DragVertical"), 
+  ItemData("DragDemo", "/DragDemo"), 
+  ItemData("GestureDetectorTestRoute", "/GestureDetectorTestRoute"), 
   ItemData("DialogDemo", "/DialogDemo"), 
   ItemData("AsyncUiDemo", "/AsyncUiDemo"), 
   ItemData("ThemeTestRoute", "/ThemeTestRoute"), 
@@ -24,6 +30,7 @@ List<ItemData> _dataList = [
   ItemData("TextDemo", "/TextDemo"), 
   ItemData("Signature", "/Signature"), 
   ItemData("MyFadeTest", "/MyFadeTest"), 
+  
 ];
 
 class Home extends StatefulWidget {
