@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/common/CommonScaffold.dart';
 
@@ -163,6 +164,107 @@ class DialogDemo extends StatelessWidget {
     );
   }
 
+  Future<int> _showModalBottomSheet(BuildContext context) {
+    return showModalBottomSheet(
+      context: context, 
+      builder: (context) {
+        return ListView.builder(
+          itemCount: 30,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text("$index"),
+              onTap: () => Navigator.of(context).pop(index),
+            );
+          }, 
+        );
+      }, 
+    );
+  }
+
+  PersistentBottomSheetController<int> _showBottomSheet(BuildContext context) {
+    return showBottomSheet(
+      context: context, 
+      builder: (context) {
+        return ListView.builder(
+          itemCount: 30,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text("$index"),
+              onTap: () {
+                print("$index");
+                Navigator.of(context).pop();
+              },
+            );
+          }, 
+        );
+      }, 
+    );
+  }
+
+  void showLoadingDialog(BuildContext context) {
+
+    showDialog(
+      context: context,
+      barrierDismissible: false, 
+      builder: (context) {
+        return UnconstrainedBox(
+          constrainedAxis: Axis.vertical,
+          child: SizedBox(
+            width: 280, 
+            child: AlertDialog(
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  CircularProgressIndicator(), 
+                  Padding(
+                    padding: EdgeInsets.only(top: 26.0), 
+                    child: Text("正在加载，请稍候..."),
+                  ), 
+                ],
+              ),
+            ),
+          ),
+        );
+      } 
+    );
+  }
+
+  Future<DateTime> showDatePicker2(BuildContext context) {
+    var date = DateTime.now();
+
+    return showCupertinoModalPopup(
+      context: context, 
+      builder: (ctx) {
+        return SizedBox(
+          height: 200,
+          child: CupertinoDatePicker(
+            mode: CupertinoDatePickerMode.dateAndTime,
+            // minimumDate: date,
+            // maximumDate: date.add(Duration(days: 30)),
+            // maximumYear: date.year + 1,
+            initialDateTime: date,
+            onDateTimeChanged: (DateTime value) {
+              print(value);
+            }, 
+          ),
+        );
+      }, 
+    );
+  }
+
+  Future<DateTime> _showDatePicker2(BuildContext context) {
+    var date = DateTime.now();
+    return showCupertinoModalPopup<DateTime>(
+      context: context,
+      builder: (ctx) {
+        return SizedBox(
+          height: 200,
+          child: Text("aaa"),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return CommonScaffold(
@@ -196,7 +298,47 @@ class DialogDemo extends StatelessWidget {
                 deleteTree == null ? print("取消删除") : print("同时删除子目录：$deleteTree");
               }, 
               child: Text("ShowCustomDialog3"), 
-            )
+            ), 
+
+            SizedBox(height: 20), 
+            FlatButton(
+              onPressed: () async {
+                int index = await _showModalBottomSheet(context);
+
+                print("$index");
+              }, 
+              child: Text("showModalBottomSheet"), 
+            ), 
+
+            SizedBox(height: 20), 
+            Builder(builder: (context) {
+              return FlatButton(
+                onPressed: () async {
+                  _showBottomSheet(context);
+
+                }, 
+                child: Text("showBottomSheet"), 
+              );
+            }),
+
+            SizedBox(height: 20), 
+            FlatButton(
+              onPressed: () {
+                showLoadingDialog(context);
+              }, 
+              child: Text("showLoadingDialog"), 
+            ), 
+
+            
+            SizedBox(height: 20), 
+            FlatButton(
+              onPressed: () async {
+                DateTime date = await showDatePicker2(context);
+
+                print("$date");
+              }, 
+              child: Text("showDatePicker2"), 
+            ), 
           ],
         ),
       ),
