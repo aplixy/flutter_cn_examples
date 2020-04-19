@@ -16,6 +16,7 @@ import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
 import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
+import 'package:fluttercnexamples/pages/PointerTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ProviderRoute.dart';
 import 'package:fluttercnexamples/pages/ScaleTestRoute.dart';
@@ -58,6 +59,7 @@ final routes = {
   "/ScaleTestRoute": (context) => ScaleTestRoute(),
   "/GestureRecognizerTestRoute": (context) => GestureRecognizerTestRoute(),
   "/GestureConflictTestRoute": (context) => GestureConflictTestRoute(),
+  "/PointerTest": (context) => PointerTest(),
 
 };
 
