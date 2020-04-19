@@ -3,6 +3,7 @@ import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 
 List<ItemData> _dataList = [
+  ItemData("EventTest1", "/EventTest1"), 
   ItemData("PointerTest", "/PointerTest"), 
   ItemData("GestureConflictTestRoute", "/GestureConflictTestRoute"), 
   ItemData("GestureRecognizerTestRoute", "/GestureRecognizerTestRoute"), 
