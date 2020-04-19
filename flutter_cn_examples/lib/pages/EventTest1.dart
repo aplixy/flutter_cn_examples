@@ -3,13 +3,18 @@ import 'package:fluttercnexamples/common/CommonScaffold.dart';
 import '../common/EventBusDemo.dart';
 
 class EventTest1 extends StatefulWidget {
-  EventTest1({Key key}) : super(key: key);
+  EventTest1({Key key, this.args}) : super(key: key);
+
+  var args;
 
   @override
-  _EventTest1State createState() => _EventTest1State();
+  _EventTest1State createState() => _EventTest1State(args: args);
 }
 
 class _EventTest1State extends State<EventTest1> {
+
+  _EventTest1State({this.args});
+  var args;
 
   UserInfo _userInfo;
   EventCallback _callback;
@@ -36,7 +41,7 @@ class _EventTest1State extends State<EventTest1> {
   @override
   Widget build(BuildContext context) {
     return CommonScaffold(
-      titleStr: "EventTest1",
+      titleStr: "EventTest1 ${args['myarg']}",
       bodyWidget: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

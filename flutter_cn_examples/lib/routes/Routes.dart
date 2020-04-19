@@ -62,7 +62,7 @@ final routes = {
   "/GestureRecognizerTestRoute": (context) => GestureRecognizerTestRoute(),
   "/GestureConflictTestRoute": (context) => GestureConflictTestRoute(),
   "/PointerTest": (context) => PointerTest(),
-  "/EventTest1": (context) => EventTest1(),
+  "/EventTest1": (context, {arguments}) => EventTest1(args: arguments,),
   "/EventTest2": (context) => EventTest2(),
 
 };
@@ -115,3 +115,36 @@ Route<dynamic> Function(RouteSettings) onGenerateRoute2 = (RouteSettings setting
 };
 
 
+typedef RouteWithSettings(context, {arguments});
+typedef SingleArgRoute(context);
+
+
+Route<dynamic> Function(RouteSettings) onGenerateRoute3 = (RouteSettings settings){
+  String name = settings.name;
+  Function myFun = routes[name];
+
+  if (myFun == null) {
+    print("找不到$name对应的路由配置");
+    showToast("找不到$name对应的路由配置");
+    return null;
+  }
+
+
+  return MaterialPageRoute(
+    builder: (context) {
+      Widget widget;
+
+
+      if (myFun is RouteWithSettings) {
+        myFun = myFun as RouteWithSettings;
+        widget = myFun(context, arguments: settings.arguments);
+        print("onGenerateRoute3--->双参数");
+      } else if (myFun is SingleArgRoute) {
+        widget = myFun(context);
+        print("onGenerateRoute3--->单参数");
+      } 
+
+      return widget;
+    }
+  );
+};
