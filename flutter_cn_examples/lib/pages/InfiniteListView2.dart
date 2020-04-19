@@ -58,8 +58,8 @@ class _InfiniteListView2State extends State<InfiniteListView2> {
   Widget build(BuildContext context) {
     return CommonScaffold(
       titleStr: "InfiniteListView",
-      bodyWidget: NotificationListener<ScrollNotification>(
-        onNotification: (ScrollNotification notification) {
+      bodyWidget: NotificationListener<OverscrollNotification>(
+        onNotification: (OverscrollNotification notification) {
 
           print("###收到通知");
           

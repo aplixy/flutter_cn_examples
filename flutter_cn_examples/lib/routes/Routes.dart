@@ -32,7 +32,10 @@ import 'package:fluttercnexamples/pages/UserModelProviderDemo.dart';
 import 'package:fluttercnexamples/pages/WillPopScopeTestRoute.dart';
 import '../common/ToastTools.dart';
 
-final routes = {
+
+typedef RounteFun = Widget Function(dynamic);
+
+final Map<String, RounteFun> routes = {
   "/": (context) => Home(),
   "/MyFadeTest": (context) => MyFadeTest(),
   "/Signature": (context) => Signature(),
