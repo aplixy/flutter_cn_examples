@@ -3,6 +3,7 @@ import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 
 List<ItemData> _dataList = [
+  ItemData("AnimatedSwitcherCounterRoute", "/AnimatedSwitcherCounterRoute"), 
   ItemData("StaggerRoute", "/StaggerRoute"), 
   ItemData("HeroAnimationRoute", "/HeroAnimationRoute"), 
   ItemData("PageRouteDemo", "/PageRouteDemo"), 

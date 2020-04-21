@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
+import 'package:fluttercnexamples/pages/AnimatedSwitcherCounterRoute.dart';
 import 'package:fluttercnexamples/pages/AsyncUiDemo.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/CounterLabel.dart';
@@ -77,6 +78,7 @@ final Map<String, RounteFun> routes = {
   "/HeroAnimationRoute": (context) => HeroAnimationRoute(),
   "/HeroAnimationRouteB": (context) => HeroAnimationRouteB(),
   "/StaggerRoute": (context) => StaggerRoute(),
+  "/AnimatedSwitcherCounterRoute": (context) => AnimatedSwitcherCounterRoute(),
 
 };
 

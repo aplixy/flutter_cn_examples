@@ -111,7 +111,7 @@ class _ScaleAnimationRouteState extends State<ScaleAnimationRoute> with TickerPr
 
           GrowTransition(
             animation: animation3,
-            child1: Image.asset(localImages[3], ),
+            child: Image.asset(localImages[3], ),
           ),
         ],
       ), 
@@ -139,9 +139,9 @@ class AnimatedImage extends AnimatedWidget {
 }
 
 class GrowTransition extends StatelessWidget {
-  GrowTransition({Key key, this.animation, this.child1}) : super(key: key);
+  GrowTransition({Key key, this.animation, this.child}) : super(key: key);
 
-  final Widget child1;
+  final Widget child;
   final Animation<double> animation;
 
   @override
@@ -149,11 +149,12 @@ class GrowTransition extends StatelessWidget {
     return Center(
       child: AnimatedBuilder(
         animation: animation, 
+        child: child,
         builder: (BuildContext context, Widget child) {
           return Container(
             height: animation.value,
             width: animation.value,
-            child: child1,
+            child: child,
           );
         },
       ), 
