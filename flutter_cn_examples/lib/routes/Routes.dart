@@ -18,6 +18,7 @@ import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
 import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
+import 'package:fluttercnexamples/pages/PageRouteDemo.dart';
 import 'package:fluttercnexamples/pages/PointerTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ProviderRoute.dart';
@@ -69,6 +70,7 @@ final Map<String, RounteFun> routes = {
   "/EventTest1": (context, {arguments}) => EventTest1(args: arguments,),
   "/EventTest2": (context) => EventTest2(),
   "/ScaleAnimationRoute": (context) => ScaleAnimationRoute(),
+  "/PageRouteDemo": (context) => PageRouteDemo(),
 
 };
 
