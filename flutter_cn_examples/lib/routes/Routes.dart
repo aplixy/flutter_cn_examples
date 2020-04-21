@@ -30,6 +30,7 @@ import 'package:fluttercnexamples/pages/ScrollControllerTestRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
 import 'package:fluttercnexamples/pages/Signature.dart';
 import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
+import 'package:fluttercnexamples/pages/StaggerRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
 import 'package:fluttercnexamples/pages/ThemeTestRoute.dart';
 import 'package:fluttercnexamples/pages/UserModelProviderDemo.dart';
@@ -75,6 +76,7 @@ final Map<String, RounteFun> routes = {
   "/PageRouteDemo": (context) => PageRouteDemo(),
   "/HeroAnimationRoute": (context) => HeroAnimationRoute(),
   "/HeroAnimationRouteB": (context) => HeroAnimationRouteB(),
+  "/StaggerRoute": (context) => StaggerRoute(),
 
 };
 
