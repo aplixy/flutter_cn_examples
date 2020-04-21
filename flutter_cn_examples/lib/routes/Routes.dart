@@ -13,6 +13,8 @@ import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/GestureConflictTestRoute.dart';
 import 'package:fluttercnexamples/pages/GestureDetectorTestRoute.dart';
 import 'package:fluttercnexamples/pages/GestureRecognizerTestRoute.dart';
+import 'package:fluttercnexamples/pages/HeroAnimationRoute.dart';
+import 'package:fluttercnexamples/pages/HeroAnimationRouteB.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
@@ -71,6 +73,8 @@ final Map<String, RounteFun> routes = {
   "/EventTest2": (context) => EventTest2(),
   "/ScaleAnimationRoute": (context) => ScaleAnimationRoute(),
   "/PageRouteDemo": (context) => PageRouteDemo(),
+  "/HeroAnimationRoute": (context) => HeroAnimationRoute(),
+  "/HeroAnimationRouteB": (context) => HeroAnimationRouteB(),
 
 };
 
