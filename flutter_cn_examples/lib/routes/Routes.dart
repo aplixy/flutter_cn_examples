@@ -21,6 +21,7 @@ import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/PointerTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ProviderRoute.dart';
+import 'package:fluttercnexamples/pages/ScaleAnimationRoute.dart';
 import 'package:fluttercnexamples/pages/ScaleTestRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollControllerTestRoute.dart';
 import 'package:fluttercnexamples/pages/ScrollNotificationTestRoute.dart';
@@ -67,6 +68,7 @@ final Map<String, RounteFun> routes = {
   "/PointerTest": (context) => PointerTest(),
   "/EventTest1": (context, {arguments}) => EventTest1(args: arguments,),
   "/EventTest2": (context) => EventTest2(),
+  "/ScaleAnimationRoute": (context) => ScaleAnimationRoute(),
 
 };
 
