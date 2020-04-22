@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercnexamples/home/Home.dart';
+import 'package:fluttercnexamples/pages/AnimatedDecoratedBox1.dart';
+import 'package:fluttercnexamples/pages/AnimatedDecoratedDemo.dart';
 import 'package:fluttercnexamples/pages/AnimatedSwitcherCounterRoute.dart';
+import 'package:fluttercnexamples/pages/AnimatedWidgetsTest.dart';
 import 'package:fluttercnexamples/pages/AsyncUiDemo.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/CounterLabel.dart';
@@ -79,6 +82,8 @@ final Map<String, RounteFun> routes = {
   "/HeroAnimationRouteB": (context) => HeroAnimationRouteB(),
   "/StaggerRoute": (context) => StaggerRoute(),
   "/AnimatedSwitcherCounterRoute": (context) => AnimatedSwitcherCounterRoute(),
+  "/AnimatedDecoratedDemo": (context) => AnimatedDecoratedDemo(),
+  "/AnimatedWidgetsTest": (context) => AnimatedWidgetsTest(),
 
 };
 
