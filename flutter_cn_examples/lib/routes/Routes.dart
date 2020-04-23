@@ -38,6 +38,7 @@ import 'package:fluttercnexamples/pages/SingleChildScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/StaggerRoute.dart';
 import 'package:fluttercnexamples/pages/TextDemo.dart';
 import 'package:fluttercnexamples/pages/ThemeTestRoute.dart';
+import 'package:fluttercnexamples/pages/TurnBoxRoute.dart';
 import 'package:fluttercnexamples/pages/UserModelProviderDemo.dart';
 import 'package:fluttercnexamples/pages/WillPopScopeTestRoute.dart';
 import '../common/ToastTools.dart';
@@ -86,6 +87,7 @@ final Map<String, RounteFun> routes = {
   "/AnimatedDecoratedDemo": (context) => AnimatedDecoratedDemo(),
   "/AnimatedWidgetsTest": (context) => AnimatedWidgetsTest(),
   "/GradientButtonRoute": (context) => GradientButtonRoute(),
+  "/TurnBoxRoute": (context) => TurnBoxRoute(),
 
 };
 
