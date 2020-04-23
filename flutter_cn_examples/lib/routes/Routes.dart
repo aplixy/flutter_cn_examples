@@ -7,6 +7,7 @@ import 'package:fluttercnexamples/pages/AnimatedWidgetsTest.dart';
 import 'package:fluttercnexamples/pages/AsyncUiDemo.dart';
 import 'package:fluttercnexamples/pages/BottomNaviDemo.dart';
 import 'package:fluttercnexamples/pages/CounterLabel.dart';
+import 'package:fluttercnexamples/pages/CustomPaintRoute.dart';
 import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/DialogDemo.dart';
 import 'package:fluttercnexamples/pages/DragDemo.dart';
@@ -88,6 +89,7 @@ final Map<String, RounteFun> routes = {
   "/AnimatedWidgetsTest": (context) => AnimatedWidgetsTest(),
   "/GradientButtonRoute": (context) => GradientButtonRoute(),
   "/TurnBoxRoute": (context) => TurnBoxRoute(),
+  "/CustomPaintRoute": (context) => CustomPaintRoute(),
 
 };
 
