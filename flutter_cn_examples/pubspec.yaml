@@ -32,6 +32,8 @@ dependencies:
   http: ^0.12.0+4
   english_words: ^3.1.5
   provider: ^4.0.5
+  path_provider: ^1.6.7
+  dio: ^3.0.9
 
 dev_dependencies:
   flutter_test:

@@ -14,6 +14,7 @@ import 'package:fluttercnexamples/pages/DragDemo.dart';
 import 'package:fluttercnexamples/pages/DragVertical.dart';
 import 'package:fluttercnexamples/pages/EventTest1.dart';
 import 'package:fluttercnexamples/pages/EventTest2.dart';
+import 'package:fluttercnexamples/pages/FileOperationRoute.dart';
 import 'package:fluttercnexamples/pages/FormTestRoute.dart';
 import 'package:fluttercnexamples/pages/GestureConflictTestRoute.dart';
 import 'package:fluttercnexamples/pages/GestureDetectorTestRoute.dart';
@@ -90,6 +91,7 @@ final Map<String, RounteFun> routes = {
   "/GradientButtonRoute": (context) => GradientButtonRoute(),
   "/TurnBoxRoute": (context) => TurnBoxRoute(),
   "/CustomPaintRoute": (context) => CustomPaintRoute(),
+  "/FileOperationRoute": (context) => FileOperationRoute(),
 
 };
 
