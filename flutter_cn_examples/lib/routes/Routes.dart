@@ -22,6 +22,7 @@ import 'package:fluttercnexamples/pages/GestureRecognizerTestRoute.dart';
 import 'package:fluttercnexamples/pages/GradientButtonRoute.dart';
 import 'package:fluttercnexamples/pages/HeroAnimationRoute.dart';
 import 'package:fluttercnexamples/pages/HeroAnimationRouteB.dart';
+import 'package:fluttercnexamples/pages/HttpTestRoute.dart';
 import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
@@ -92,6 +93,7 @@ final Map<String, RounteFun> routes = {
   "/TurnBoxRoute": (context) => TurnBoxRoute(),
   "/CustomPaintRoute": (context) => CustomPaintRoute(),
   "/FileOperationRoute": (context) => FileOperationRoute(),
+  "/HttpTestRoute": (context) => HttpTestRoute(),
 
 };
 
