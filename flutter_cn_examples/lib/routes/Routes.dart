@@ -10,6 +10,7 @@ import 'package:fluttercnexamples/pages/CounterLabel.dart';
 import 'package:fluttercnexamples/pages/CustomPaintRoute.dart';
 import 'package:fluttercnexamples/pages/CustomScrollViewTestRoute.dart';
 import 'package:fluttercnexamples/pages/DialogDemo.dart';
+import 'package:fluttercnexamples/pages/DownloadChunkRoute.dart';
 import 'package:fluttercnexamples/pages/DragDemo.dart';
 import 'package:fluttercnexamples/pages/DragVertical.dart';
 import 'package:fluttercnexamples/pages/EventTest1.dart';
@@ -29,6 +30,7 @@ import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
 import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/PageRouteDemo.dart';
+import 'package:fluttercnexamples/pages/PathTest.dart';
 import 'package:fluttercnexamples/pages/PointerTest.dart';
 import 'package:fluttercnexamples/pages/ProgressRoute.dart';
 import 'package:fluttercnexamples/pages/ProviderRoute.dart';
@@ -94,6 +96,8 @@ final Map<String, RounteFun> routes = {
   "/CustomPaintRoute": (context) => CustomPaintRoute(),
   "/FileOperationRoute": (context) => FileOperationRoute(),
   "/HttpTestRoute": (context) => HttpTestRoute(),
+  "/DownloadChunkRoute": (context) => DownloadChunkRoute(),
+  "/PathTest": (context) => PathTest(),
 
 };
 

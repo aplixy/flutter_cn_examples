@@ -3,6 +3,8 @@ import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 
 List<ItemData> _dataList = [
+  ItemData("PathTest", "/PathTest"), 
+  ItemData("DownloadChunkRoute", "/DownloadChunkRoute"), 
   ItemData("HttpTestRoute", "/HttpTestRoute"), 
   ItemData("FileOperationRoute", "/FileOperationRoute"), 
   ItemData("CustomPaintRoute", "/CustomPaintRoute"), 
