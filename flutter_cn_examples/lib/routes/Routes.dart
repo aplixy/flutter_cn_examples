@@ -45,6 +45,7 @@ import 'package:fluttercnexamples/pages/TextDemo.dart';
 import 'package:fluttercnexamples/pages/ThemeTestRoute.dart';
 import 'package:fluttercnexamples/pages/TurnBoxRoute.dart';
 import 'package:fluttercnexamples/pages/UserModelProviderDemo.dart';
+import 'package:fluttercnexamples/pages/WebSocketRoute.dart';
 import 'package:fluttercnexamples/pages/WillPopScopeTestRoute.dart';
 import '../common/ToastTools.dart';
 
@@ -98,6 +99,7 @@ final Map<String, RounteFun> routes = {
   "/HttpTestRoute": (context) => HttpTestRoute(),
   "/DownloadChunkRoute": (context) => DownloadChunkRoute(),
   "/PathTest": (context) => PathTest(),
+  "/WebSocketRoute": (context) => WebSocketRoute(),
 
 };
 
