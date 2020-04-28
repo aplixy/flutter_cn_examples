@@ -28,6 +28,7 @@ import 'package:fluttercnexamples/pages/InfiniteGridView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView.dart';
 import 'package:fluttercnexamples/pages/InfiniteListView2.dart';
 import 'package:fluttercnexamples/pages/InheritedWidgetTestRoute.dart';
+import 'package:fluttercnexamples/pages/JsonTestRoute.dart';
 import 'package:fluttercnexamples/pages/MyFadeTest.dart';
 import 'package:fluttercnexamples/pages/PageRouteDemo.dart';
 import 'package:fluttercnexamples/pages/PathTest.dart';
@@ -100,6 +101,7 @@ final Map<String, RounteFun> routes = {
   "/DownloadChunkRoute": (context) => DownloadChunkRoute(),
   "/PathTest": (context) => PathTest(),
   "/WebSocketRoute": (context) => WebSocketRoute(),
+  "/JsonTestRoute": (context) => JsonTestRoute(),
 
 };
 

@@ -3,6 +3,7 @@ import 'package:fluttercnexamples/common/DefAdapter.dart';
 import 'package:fluttercnexamples/common/MyListViewBuilder.dart';
 
 List<ItemData> _dataList = [
+  ItemData("JsonTestRoute", "/JsonTestRoute"), 
   ItemData("WebSocketRoute", "/WebSocketRoute"), 
   ItemData("PathTest", "/PathTest"), 
   ItemData("DownloadChunkRoute", "/DownloadChunkRoute"), 
